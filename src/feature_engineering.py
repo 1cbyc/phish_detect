@@ -18,5 +18,6 @@ def preprocess_features(X_train, X_test):
         ('imputer', SimpleImputer(strategy='mean')),
         ('scaler', StandardScaler())])
     
-    
+    # i want to  combine both transformers ion a preprocessor
+    prep
     
