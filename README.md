@@ -7,3 +7,5 @@ i intend to use nlp to analyze URLs, email content, and webpage features to dete
 ## thinking out loud: features
 i am thinking on the website where people would do phishing websites search, i will probably add a counter to show how many searches has been found.
 
+i also think i should have a way for people to add to the phishing list for my model to validate too, and train with. like a 
+
