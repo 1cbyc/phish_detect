@@ -7,17 +7,12 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Phish Detect - Nsisong</h1>
+    <h1>Phish Detect</h1>
     <p>Enter a URL to check if it's potentially a phishing attempt.</p>
     
-    <form action="/predict" method="post">
+    <form action="{{ url_for('detect') }}" method="post">
         <input type="text" name="url" placeholder="Enter URL here" required>
         <button type="submit">Check</button>
     </form>
-
-    {% if prediction is not none %}
-        <h2>Prediction: {{ prediction }}</h2>
-        <p>Confidence: {{ confidence }}%</p>
-    {% endif %}
 </body>
 </html>
