@@ -22,3 +22,5 @@ from web_app.routes import app
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+# i did it that this script simply runs the Flask app, delegating routes to web_app/routes.py
