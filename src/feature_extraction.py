@@ -13,4 +13,6 @@ def extract_metadata_features(urls):
     lengths = urls.apply(lambda x: len(x))
     special_char_count = urls.apply(lambda x: sum(1 for c in x if not c.isalnum()))
 
-    metadata_features
+    metadata_features = pd.DataFrame({
+        
+    })
