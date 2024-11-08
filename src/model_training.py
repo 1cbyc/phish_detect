@@ -10,23 +10,23 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 # will read the csv file here:
 # data = pd.read_csv("data/phishing_urls.csv")
 
-# to load the data used
-features, target = load_data()
-X_train, X_test, y_train, y_test = split_data(features, target)
+# # to load the data used
+# features, target = load_data()
+# X_train, X_test, y_train, y_test = split_data(features, target)
 
-# to extract combined features (text + metadata)
-X_train_combined, X_test_combined = extract_combined_features(X_train, X_test)
+# # to extract combined features (text + metadata)
+# X_train_combined, X_test_combined = extract_combined_features(X_train, X_test)
 
-# to train the randomforest model
-model = RandomForestClassifier(n_estimators=100, random_state=42)
-model.fit(X_train_combined, y_train)
+# # to train the randomforest model
+# model = RandomForestClassifier(n_estimators=100, random_state=42)
+# model.fit(X_train_combined, y_train)
 
-# evaluating the model rn
-accuracy = model.score(X_test_combined, y_test)
-print(f"Model accuracy: {accuracy * 100:.2f}%")
+# # evaluating the model rn
+# accuracy = model.score(X_test_combined, y_test)
+# print(f"Model accuracy: {accuracy * 100:.2f}%")
 
-# training the model
-joblib.dump(model, 'src/phish_detection_model.pkl')
+# # training the model
+# joblib.dump(model, 'src/phish_detection_model.pkl')
 
 def train_model(X_train, y_train):
     model = LogisticRegression(max_iter=1000) # increase max_iter if necessary
