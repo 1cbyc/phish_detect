@@ -7,3 +7,5 @@ def extract_text_features(X_train, X_test):
     X_train_tfidf = vectorizer.fit_transform(X_train)
     X_test_tfidf = vectorizer.transform(X_test)
     return X_test_tfidf, X_test_tfidf
+
+def extract_metadata_features(urls)
