@@ -10,6 +10,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 # will read the csv file here:
 # data = pd.read_csv("data/phishing_urls.csv")
 
+# to load the data used
 
 
 def train_model(X_train, y_train):
