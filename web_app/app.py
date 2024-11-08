@@ -3,7 +3,7 @@ from src.phish_detection_model import load_model, predict_url
 
 app = Flask(__name__)
 model = load_model()
-preprocessor = None  # Load your preprocessor if saved separately
+preprocessor = None  # to load the preprocessor if saved separately
 
 @app.route("/", methods=["GET", "POST"])
 def index():
