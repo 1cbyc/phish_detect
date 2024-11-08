@@ -20,4 +20,5 @@ def extract_metadata_features(urls):
 
     return metadata_features.values
 
-def extract_combined_features(X_train)
+def extract_combined_features(X_train, X_test):
+    # extract t
