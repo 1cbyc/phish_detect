@@ -32,4 +32,6 @@ def extract_combined_features(X_train, X_test):
     X_train_combined = np.hstack([X_train_text.toarray(), X_train_meta])
     X_test_combined = np.hstack([X_test_text.toarray(), X_test_meta])
 
-    return X_train
+    return X_train_combined, X_test_combined
+
+#
