@@ -17,3 +17,7 @@ def extract_metadata_features(urls):
         'length': lengths,
         'special_char_count': special_char_count
     })
+
+    return metadata_features.values
+
+def extract
