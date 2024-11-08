@@ -8,7 +8,7 @@ def evaluate_model(model, X_test, y_test):
     y_pred = model.predict(X_test)
     y_prob = model.predict_proba(X_test)[:, 1]
     
-    # Confusion Matrix
+    # adding the confusion Matrix
     cm = confusion_matrix(y_test, y_pred)
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')
     plt.xlabel('Predicted')
@@ -16,10 +16,10 @@ def evaluate_model(model, X_test, y_test):
     plt.title('Confusion Matrix')
     plt.show()
     
-    # Classification Report
+    # writing the classification Report
     print("Classification Report:\n", classification_report(y_test, y_pred))
     
-    # ROC AUC Score
+    # for the roc AUC Score
     roc_auc = roc_auc_score(y_test, y_prob)
     print("ROC AUC Score:", roc_auc)
     
