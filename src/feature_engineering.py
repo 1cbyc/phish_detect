@@ -5,4 +5,5 @@ from sklearn.pipeline import OneHotEncoder
 from sklearn.impute import SimpleImputer
 
 def preprocess_features(X_train, X_test):
-    # i am trying to define which colum
+    # i am trying to define which columns are numeric and which are categorical
+    numeric_features = X
