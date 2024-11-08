@@ -2,6 +2,8 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 def load_data():
+    # now i have to use the phisIIL dataset cause i could not manually sort
+    data = pd
     phishing_df = pd.read_csv('data/phishing_urls.csv')
     legit_df = pd.read_csv('data/legitimate_urls.csv')
 
