@@ -5,4 +5,4 @@ def load_data():
     phishing_df = pd.read_csv('data/phishing_urls.csv')
     legit_df = pd.read_csv('data/legitimate_urls.csv')
 
-    # i want to add a label colum
+    # i want to add a label colum: 1 for p
