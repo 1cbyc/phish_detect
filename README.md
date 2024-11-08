@@ -11,7 +11,6 @@ i am thinking on the website where people would do phishing websites search, i w
 i also think i should have a way for people to add to the phishing list for my model to validate too, and train with. like a `submit phishing site` button.
 
 
-
 ## random finds
 
 https://www.phishtank.com/
