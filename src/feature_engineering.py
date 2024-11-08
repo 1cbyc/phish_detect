@@ -32,4 +32,4 @@ def preprocess_features(X_train, X_test):
 
     return X_train, X_test
 
-# what i did here is to ensure all categorical features are encoded and normalize 
+# what i did here is to ensure all categorical features are encoded and normalize or scale numerical features if necessary.
