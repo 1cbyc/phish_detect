@@ -10,4 +10,4 @@ def load_data():
     legit_df['label'] = 0
 
     # so now i want to concatenate the datasets and shuffle it
-    data = pd.concat
+    data = pd.concat([phishing_df, legit_df])
