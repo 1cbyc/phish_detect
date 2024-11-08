@@ -11,7 +11,7 @@ def index():
     if request.method == "POST":
         url = request.form["url"]
         prediction, confidence = predict_url(url, model, preprocessor)
-        confidence = round(confidence[0][1] * 100, 2)  # Assuming 2nd column is phishing probability
+        confidence = round(confidence[0][1] * 100, 2)  # if the 2nd column is phishing probability
     
     return render_template("index.html", prediction=prediction, confidence=confidence)
 
