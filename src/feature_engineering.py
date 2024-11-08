@@ -9,7 +9,7 @@ def preprocess_features(X_train, X_test):
     numeric_features = X_train.select_dtypes(include=['int64', 'float64']).columns
     categorical_features = X_train.select_dtypes(include=['object']).columns
 
-    # Preprocessing pipelines for both types of features
+    # starting to preprocess the pipelines for both types of features
     numeric_transformer = Pipeline(steps=[
         ('imputer', SimpleImputer(strategy='mean')),
         ('scaler', StandardScaler())])
