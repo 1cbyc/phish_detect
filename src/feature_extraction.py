@@ -29,4 +29,4 @@ def extract_combined_features(X_train, X_test):
     X_train_meta = extract_metadata_features(X_test)
 
     # trying to combine text and metadata features
-    X_train_combined = np.hstack([X_train])
+    X_train_combined = np.hstack([X_train_text.toarray(),])
