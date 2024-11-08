@@ -20,9 +20,9 @@ def load_data():
     data['label'] = data['label'].apply(lambda x: 1 if x == 'phishing' else 0) # encoding the label perfectly
     # so now i want to concatenate the datasets and shuffle it
     # data = pd.concat([phishing_df, legit_df]).sample(franc=1).reset_index(drop=True)
-    return data
-    return 
+    # return data
 
+    return features, target
 
 def split_data(data):
     X = data['url'] # if i run it for the email, i will use 'email' instead of url (depending on the data i use)
