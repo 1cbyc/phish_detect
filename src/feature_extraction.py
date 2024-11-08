@@ -24,4 +24,5 @@ def extract_combined_features(X_train, X_test):
     # trying to extract tf-idf features
     X_train_text, X_test_text = extract_text_features(X_train, X_test)
 
-    # will extract metadata
+    # will extract metadata features
+    X_train_meta
