@@ -9,4 +9,6 @@ def train_model(X_train, y_train):
     return model
 def evaluate_model(model, X_test, y_test):
     y_pred = model.predict(X_test)
-    
+    return {
+        'accuracy': ac
+    }
