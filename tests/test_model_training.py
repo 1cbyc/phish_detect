@@ -14,6 +14,6 @@ def test_model():
     print("Test passed! Model metrics:", results)
 
 
-# 
+# trying to run the test this way
 if __name__ == "__main__":
     test_model()
