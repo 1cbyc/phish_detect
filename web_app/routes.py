@@ -12,8 +12,8 @@ def index():
 @app.route('/detect', methods=['POST'])
 def detect():
     url = request.form.get('url')
-    prediction = model.predict([url])[0]
-        prediction, confidence = predict_url(url, model, preprocessor)
+    # prediction = model.predict([url])[0]
+    prediction, confidence = predict_url(url, model, preprocessor)
     result = "Phishing" if prediction == 1 else "Legitimate"
     return render_template('result.html', url=url, result=result)
 
