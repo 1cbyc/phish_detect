@@ -1,6 +1,7 @@
 import joblib
 # import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
+from src.data_processing import load_data, split_data
 from src.feature_extraction import extract_combined_features
 # from src.model_training import train_model
 from sklearn.linear_model import LogisticRegression
