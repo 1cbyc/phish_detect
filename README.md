@@ -16,6 +16,6 @@ i also think i should have a way for people to add to the phishing list for my m
 https://www.phishtank.com/
 
 
-## random changes 
+## random workups 
 
 initially i was thinking i will find one pre-set dataset on kaggle to use that has legit and phishing separately. but clearly right now i found something else the [PhiUSiil dataset](ttps://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset). Will use that, so i will adjust the data preprocessing script. 
