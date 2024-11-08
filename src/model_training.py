@@ -14,9 +14,8 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 features, target = load_data()
 X_train, X_test, y_train, y_test = split_data(features, target)
 
-# Extract combined features (text + metadata)
+# to extract combined features (text + metadata)
 X_train_combined, X_test_combined = extract_combined_features(X_train, X_test)
-
 
 def train_model(X_train, y_train):
     model = LogisticRegression(max_iter=1000) # increase max_iter if necessary
