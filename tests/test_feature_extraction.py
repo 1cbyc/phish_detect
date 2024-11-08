@@ -1,5 +1,3 @@
-# tests/test_feature_extraction.py
-
 import unittest
 from src.feature_extraction import preprocess_features
 from src.data_preprocessing import load_data, split_data
