@@ -8,4 +8,5 @@ def extract_text_features(X_train, X_test):
     X_test_tfidf = vectorizer.transform(X_test)
     return X_test_tfidf, X_test_tfidf
 
-def extract_metadata_features(urls)
+def extract_metadata_features(urls):
+    # i am looking at possible e
