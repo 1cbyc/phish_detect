@@ -15,5 +15,5 @@ def preprocess_features(X_train, X_test):
             ('scaler', StandardScaler())])
     
         categorical_tranformer =Pipeline(steps=[
-            
+            ('imputer', SimpleImputer(strategy=))
         ])
