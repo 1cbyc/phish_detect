@@ -11,6 +11,8 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 # data = pd.read_csv("data/phishing_urls.csv")
 
 # to load the data used
+features, target = load_data()
+X_train, X_test, y_train, y_test = split_data(features, target)
 
 
 def train_model(X_train, y_train):
