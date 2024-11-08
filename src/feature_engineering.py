@@ -1,1 +1,1 @@
-from sk
+from sklearn.preprocessing import StandardScaler
