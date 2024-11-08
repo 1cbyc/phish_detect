@@ -16,6 +16,7 @@ def detect():
     prediction, confidence = predict_url(url, model, preprocessor)
     confidence_percentage = round(confidence[0][1] * 100, 2)  # that is if phishing probability in 2nd column
     result = "Phishing" if prediction == 1 else "Legitimate"
+    
     return render_template('result.html', url=url, result=result)
 
 if __name__ == '__main__':
