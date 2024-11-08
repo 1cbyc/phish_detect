@@ -21,7 +21,7 @@ def preprocess_features(X_train, X_test):
     # i want to  combine both transformers ion a preprocessor
     preprocessor = ColumnTransformer(
         transformers=[
-            
+            ('num', numeric_transformer)
         ]
     )
     
