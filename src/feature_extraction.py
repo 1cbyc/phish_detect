@@ -26,5 +26,4 @@ def extract_combined_features(X_train, X_test):
 
     # will extract metadata features
     X_train_meta = extract_text_features(X_train, X_test)
-
-    
+    X_t
