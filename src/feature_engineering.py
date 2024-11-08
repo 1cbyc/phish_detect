@@ -1,2 +1,3 @@
 from sklearn.preprocessing import StandardScaler
-from sklearn.compose
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
