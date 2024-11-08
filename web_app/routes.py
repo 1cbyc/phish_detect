@@ -24,3 +24,5 @@ def detect():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+# i did it in a way that this script handles routing, prediction, and rendering of both the main form and result pages.
