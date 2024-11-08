@@ -16,7 +16,7 @@ def load_data():
     # since i want to make sure 'label' column is binary (1 for phishing, 0 for legitimate)
     data['label'] = data['label'].apply(lambda x: 1 if x == 'phishing' else 0)
     # so now i want to concatenate the datasets and shuffle it
-    data = pd.concat([phishing_df, legit_df]).sample(franc=1).reset_index(drop=True)
+    # data = pd.concat([phishing_df, legit_df]).sample(franc=1).reset_index(drop=True)
     return data
 
 def split_data(data):
