@@ -17,6 +17,11 @@ X_train, X_test, y_train, y_test = split_data(features, target)
 # to extract combined features (text + metadata)
 X_train_combined, X_test_combined = extract_combined_features(X_train, X_test)
 
+
+# to train a model (RandomForest in this case)
+model = RandomForestClassifier(n_estimators=100, random_state=42)
+model.fit(X_train_combined, y_train)
+
 def train_model(X_train, y_train):
     model = LogisticRegression(max_iter=1000) # increase max_iter if necessary
     model.fit(X_train, y_train)
