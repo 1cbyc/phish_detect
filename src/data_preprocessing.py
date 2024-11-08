@@ -21,6 +21,8 @@ def load_data():
     # so now i want to concatenate the datasets and shuffle it
     # data = pd.concat([phishing_df, legit_df]).sample(franc=1).reset_index(drop=True)
     return data
+    return 
+
 
 def split_data(data):
     X = data['url'] # if i run it for the email, i will use 'email' instead of url (depending on the data i use)
