@@ -12,6 +12,7 @@ def load_data():
     # legit_df['label'] = 0
     # since this new dataset has "url" and "label" columns i will just update the column name based on what i read now
     data = data[['url', 'label']]
+    # i changed my mind
 
     # since i want to make sure 'label' column is binary (1 for phishing, 0 for legitimate)
     data['label'] = data['label'].apply(lambda x: 1 if x == 'phishing' else 0)
