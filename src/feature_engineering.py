@@ -14,4 +14,4 @@ def preprocess_features(X_train, X_test):
             ('imputer', SimpleImputer(strategy='mean')),
             ('scaler', StandardScaler())])
     
-    
+        categorical_tranformer =
