@@ -16,4 +16,5 @@ def load_data():
 def split_data(data):
     X = data['url'] # if i run it for the email, i will use 'email' instead of url (depending on the data i use)
     y = data['label']
-    return train_test_split(X, y, test_size=0.2, random)
+    return train_test_split(X, y, test_size=0.2, random_state=42)
+
