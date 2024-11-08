@@ -12,7 +12,7 @@ def load_data():
     # legit_df['label'] = 0
     # since this new dataset has "url" and "label" columns i will just update the column name based on what i read now
     data = data[['url', 'label']]
-    # i changed my mind, let me just select relevant colums from the phisl dataset i used this way:
+    # i changed my mind, let me just select relevant colums from the phishIIL dataset i used this way:
     features = data.drop(columns=['FILENAME', 'URL', 'label']) # so i will drop unnecessary columns like this
     target = data['label'].apply(lambda x: 1 if x == 'phishing' else 0)
 
