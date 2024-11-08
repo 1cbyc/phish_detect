@@ -16,4 +16,4 @@ def evaluate_model(model, X_test, y_test):
         'f1_score': f1_score(y_test, y_pred)
     }
 
-
+# what i did here is use logistic regression model 
