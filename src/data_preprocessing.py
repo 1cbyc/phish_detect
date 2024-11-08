@@ -7,4 +7,6 @@ def load_data():
 
     # i want to add a label colum: 1 for phishing and 0 for legit
     phishing_df['label'] = 1
-    legit_df['label']
+    legit_df['label'] = 0
+
+    # so now 
