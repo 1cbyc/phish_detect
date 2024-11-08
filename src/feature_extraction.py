@@ -15,5 +15,5 @@ def extract_metadata_features(urls):
 
     metadata_features = pd.DataFrame({
         'length': lengths,
-        
+        'special_char_count'
     })
