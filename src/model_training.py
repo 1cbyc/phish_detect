@@ -5,6 +5,7 @@ from src.model_training import train_model
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
+# 
 data = pd.read_csv("data/phishing_urls.csv")
 
 def train_model(X_train, y_train):
