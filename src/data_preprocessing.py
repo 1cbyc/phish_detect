@@ -14,4 +14,4 @@ def load_data():
     return data
 
 def split_data(data):
-    X = data['url']
+    X = data['url'] # 
