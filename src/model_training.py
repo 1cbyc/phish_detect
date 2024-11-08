@@ -25,6 +25,9 @@ model.fit(X_train_combined, y_train)
 accuracy = model.score(X_test_combined, y_test)
 print(f"Model accuracy: {accuracy * 100:.2f}%")
 
+# training the model
+joblib.dump(model, 'src/phish_detection_model.pkl')
+
 def train_model(X_train, y_train):
     model = LogisticRegression(max_iter=1000) # increase max_iter if necessary
     model.fit(X_train, y_train)
