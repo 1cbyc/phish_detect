@@ -3,6 +3,7 @@ import joblib
 
 app = Flask(__name__)
 model = joblib.load('src/phish_detection_model.pkl')
+preprocessor = None  # Load your preprocessor here if it was saved separately
 
 @app.route('/')
 def index():
