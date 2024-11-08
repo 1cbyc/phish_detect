@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request
 import joblib
+from src.phish_detection_model import predict_url
 
 app = Flask(__name__)
 model = joblib.load('src/phish_detection_model.pkl')
