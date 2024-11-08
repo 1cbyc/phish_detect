@@ -34,4 +34,4 @@ def extract_combined_features(X_train, X_test):
 
     return X_train_combined, X_test_combined
 
-# what i did was adapt feature extraction for the data set because i think urls will need nlp based and metadata based feature extraction. first when i did the text-based features, i use the TF-IDF to convert the URL text into features. then, when the metadata-based features include URL length, the count of special characters, etc., as additional features.
+# what i did was adapt feature extraction for the data set because i think urls will need nlp based and metadata based feature extraction. first when i did the text-based features, i use the TF-IDF to convert the URL text into features. then, when the metadata-based features include URL length, the count of special characters as added feat.
