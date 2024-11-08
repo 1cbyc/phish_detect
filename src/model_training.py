@@ -6,4 +6,5 @@ def train_model(X_train, y_train):
     model = LogisticRegression(max_iter=1000) # increase max_iter if necessary
     model.fit(X_train, y_train)
     joblib.dump(model, 'src/phish_detection_model.pkl')
-    return 
+    return model
+\def evaluate_model(model)
