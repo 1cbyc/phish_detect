@@ -13,6 +13,7 @@ def test_model():
     assert results['accuracy'] > 0.7, "Model accuracy is below threshold!"
     print("Test passed! Model metrics:", results)
 
-# Run the test
+
+# 
 if __name__ == "__main__":
     test_model()
