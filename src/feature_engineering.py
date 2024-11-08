@@ -10,11 +10,11 @@ def preprocess_features(X_train, X_test):
     categorical_features = X_train.select_dtypes(include=['object']).columns
 
     # Preprocessing pipelines for both types of features
-        numeric_transformer = Pipeline(steps=[
+    numeric_transformer = Pipeline(steps=[
             ('imputer', SimpleImputer(strategy='mean')),
             ('scaler', StandardScaler())])
     
-        categorical_tranformer =Pipeline(steps=[
+    categorical_tranformer =Pipeline(steps=[
             ('imputer', SimpleImputer(strategy='mean')),
             ('scaler', StandardScaler())])
     
