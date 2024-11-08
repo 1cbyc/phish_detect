@@ -13,3 +13,4 @@ def load_data():
     data = pd.concat([phishing_df, legit_df]).sample(franc=1).reset_index(drop=True)
     return data
 
+def split_data
