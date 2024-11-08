@@ -12,5 +12,6 @@ def evaluate_model(model, X_test, y_test):
     return {
         'accuracy': accuracy_score(y_test, y_pred),
         'precision': precision_score(y_test, y_pred),
-        'recall': recall_score(y_test, y_pred)
+        'recall': recall_score(y_test, y_pred),
+        'f1_score': 
     }
