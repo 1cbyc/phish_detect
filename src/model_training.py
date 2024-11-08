@@ -17,8 +17,7 @@ X_train, X_test, y_train, y_test = split_data(features, target)
 # to extract combined features (text + metadata)
 X_train_combined, X_test_combined = extract_combined_features(X_train, X_test)
 
-
-# to train a model (RandomForest in this case)
+# to train the randomforest model
 model = RandomForestClassifier(n_estimators=100, random_state=42)
 model.fit(X_train_combined, y_train)
 
