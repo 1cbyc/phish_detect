@@ -3,9 +3,9 @@ from sklearn.model_selection import train_test_split
 
 def load_data():
     # now i have to use the phisIIL dataset cause i could not manually sort
-    data = pd.read_csv('data/p')
-    phishing_df = pd.read_csv('data/phishing_urls.csv')
-    legit_df = pd.read_csv('data/legitimate_urls.csv')
+    data = pd.read_csv('data/phishIIL.csv')
+    # phishing_df = pd.read_csv('data/phishing_urls.csv')
+    # legit_df = pd.read_csv('data/legitimate_urls.csv')
 
     # i want to add a label colum: 1 for phishing and 0 for legit
     phishing_df['label'] = 1
