@@ -22,7 +22,7 @@ def preprocess_features(X_train, X_test):
     preprocessor = ColumnTransformer(
         transformers=[
             ('num', numeric_transformer, numeric_features),
-            ('cat')
+            ('cat', categorical_tranformer, categorical_features)
         ]
     )
     
