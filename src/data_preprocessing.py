@@ -18,4 +18,5 @@ def split_data(data):
     y = data['label']
     return train_test_split(X, y, test_size=0.2, random_state=42)
 
-# the plan now on this script is to load phishing and legit url data. then label the phishing data as 1 aa
+# the plan now on this script is to load phishing and legit url data. then label the phishing data as 1 and legit as 0. then split the data into training and test sets.
+
