@@ -19,5 +19,9 @@ def preprocess_features(X_train, X_test):
         ('scaler', StandardScaler())])
     
     # i want to  combine both transformers ion a preprocessor
-    prep
+    preprocessor = ColumnTransformer(
+        transformers=[
+            
+        ]
+    )
     
