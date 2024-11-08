@@ -11,5 +11,5 @@ def preprocess_features(X_train, X_test):
 
     Preprocessing pipelines for both types of features
         numeric_transformer = Pipeline(steps=[
-            ('')
+            ('imputer', SimpleImputer(strategy=))
         ])
