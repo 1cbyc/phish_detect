@@ -1,5 +1,3 @@
-# src/model_evaluation.py
-
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix, classification_report, roc_auc_score, roc_curve
 import seaborn as sns
