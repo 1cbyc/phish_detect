@@ -11,7 +11,7 @@ def load_data():
     phishing_df['label'] = 1
     legit_df['label'] = 0
     # since this new dataset has "url" and "label" columns i will just update the column name based on what i read now
-    data 
+    data = data[['url', 'label']]
 
     # so now i want to concatenate the datasets and shuffle it
     data = pd.concat([phishing_df, legit_df]).sample(franc=1).reset_index(drop=True)
